@@ -1,3 +1,4 @@
+package Labs;
 /*
  * Wk 3-1 Lab: Arraylist
  * Go through the ArrayList Java documentation.

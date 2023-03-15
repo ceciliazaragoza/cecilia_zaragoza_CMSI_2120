@@ -23,7 +23,7 @@ class MyLinkedList {
 		} else {
 			Node trav;
 			trav = head;
-			while (trav.next!= null) {
+			while (trav.next != null) {
 				trav = trav.next;
 			}
 			trav.next = n;

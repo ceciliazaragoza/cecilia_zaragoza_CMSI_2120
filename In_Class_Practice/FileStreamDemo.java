@@ -15,6 +15,8 @@ class FileStreamDemo {
             while ((c = in.read()) != -1) {
                 out.write(c);
             }
+            in.close();
+            out.close();
         } catch (FileNotFoundException fnf) {
             System.err.println("Sorry couldn't find the file.");
         } catch (IOException io) {

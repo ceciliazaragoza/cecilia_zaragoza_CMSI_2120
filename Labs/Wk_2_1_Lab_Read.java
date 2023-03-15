@@ -1,3 +1,4 @@
+package Labs;
 /*
  * Wk 2-1 Lab: I/O Character Stream & Exception
  * Read through the character stream documentation and write 2 classes of your choice:
