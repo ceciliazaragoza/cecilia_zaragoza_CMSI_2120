@@ -1,14 +1,9 @@
 public class Node {
-    public String name;
+    public String data;
     public Node next;
     
-    Node( ) { 
-    	this.name = "*";
-    	this.next = null;
-    }
-
     Node(String  s) { 
-    	this.name = s;
+    	this.data = s;
     	this.next = null;
     }
 }

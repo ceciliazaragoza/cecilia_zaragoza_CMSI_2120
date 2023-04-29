@@ -15,17 +15,16 @@ public class MainBTTest {
         daT.printBT("Post");
 
         //searching for elements
-        System.out.println("Searching for element 3: ");
-        daT.search(3);
-        System.out.println("Search for element 5 (does not exist in list): ");
-        daT.search(5);
+        int searchElem = daT.search(3);
+        System.out.println("Searching for element 3, index is: " + searchElem);
+        System.out.println("Search for element 5 (does not exist in list), index is: " + daT.search(5));
+        
         //deleting elements
-        System.out.println("Deleting element 4: ");
-        daT.delete(4);
+        System.out.println("Deleting element 4, return element: " + daT.delete(4));
         System.out.println("Here are the elements in the Binary Tree in-order.");
         daT.printBT();
-        System.out.println("Deleting an element that doesn't exist in the tree (element 7): ");
-        daT.delete(7);
+        System.out.println("Deleting an element that doesn't exist in the tree (element 7), return element: " + daT.delete(7));
+        
 
         //creating another binary tree
         MyBT daT2 = new MyBT(2, 5, 1);
@@ -44,20 +43,19 @@ public class MainBTTest {
         daT2.printBT("Post");
 
         //searching for elements
-        System.out.println("Searching for element 8: ");
-        daT2.search(8);
-        System.out.println("Search for element 3 (does not exist in list): ");
-        daT2.search(3);
+        searchElem = daT2.search(1);
+        System.out.println("Searching for element 1, index is: " + searchElem);
+        searchElem = daT2.search(6);
+        System.out.println("Searching for element 6, index is: " + searchElem);
+        searchElem = daT2.search(5);
+        System.out.println("Searching for element 5, index is: " + searchElem);
+
+        System.out.println("Search for element 3 (does not exist in list), index is: " + daT2.search(3));
 
         //deleting elements
-        System.out.println("Deleting element 6: ");
-        daT2.delete(6);
+        System.out.println("Deleting element 6, return element: " + daT2.delete(6));
         System.out.println("Here are the elements in the Binary Tree in-order.");
         daT2.printBT();
-        System.out.println("Deleting an element that doesn't exist in the tree (element 10): ");
-        daT2.delete(10);
-        
-
-	}
-
+        System.out.println("Deleting an element that doesn't exist in the tree (element 10), return element: " + daT2.delete(10));
+    }
 }

@@ -27,6 +27,7 @@ public class Wk_2_1_Lab_Read {
             if (in != null) {
                 in.close();
             }
+            
             if (out != null) {
                 out.close();
             }
